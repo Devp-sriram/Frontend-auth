@@ -57,7 +57,7 @@ const handleSubmit = async (e) =>{
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>email</Form.Label>
+                    <Form.Label>Email</Form.Label>
                     <Form.Control 
                     type ="email" 
                     name="email" 
@@ -68,13 +68,13 @@ const handleSubmit = async (e) =>{
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>password</Form.Label>
+                    <Form.Label>Password</Form.Label>
                     <Form.Control 
                     type ="password" 
                     name="password" 
                     value ={formData.password} 
                     onChange = {handleChange} 
-                    required >
+                    required >                
                     </Form.Control>
                 </Form.Group>
                 <Button variant='primary' type = "submit">

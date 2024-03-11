@@ -43,7 +43,7 @@ const handleSubmit = async (e) =>{
     <h1>Login </h1>
     <Form onSubmit={handleSubmit}>
          <Form.Group>
-             <Form.Label>email</Form.Label>
+             <Form.Label>Email</Form.Label>
              
              <Form.Control 
              type ="email" 
@@ -55,7 +55,7 @@ const handleSubmit = async (e) =>{
          </Form.Group>
 
          <Form.Group>
-             <Form.Label>password</Form.Label>
+             <Form.Label>Password</Form.Label>
              <Form.Control 
              type ="password" 
              name="password" 
