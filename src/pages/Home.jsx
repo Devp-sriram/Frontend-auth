@@ -2,7 +2,6 @@ import React , { useEffect , useState} from 'react'
 import { Container , Button} from 'react-bootstrap'
 import "../styles/Home.css";
 import axios from 'axios'
-import API_URL from '../../config/global';
 
 
 const Home = () => {
@@ -24,7 +23,7 @@ useEffect(()=>{
                          authorization : token
                     }
                }
-          const response = await axios.get(`${API_URL}/home`, config); 
+          const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/home`, config); 
           console.log(response);
 
           if(response.data === 'Invalid Token'){

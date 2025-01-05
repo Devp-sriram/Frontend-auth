@@ -3,7 +3,6 @@ import{ Container,Form, Button } from "react-bootstrap";
 import "../styles/SignUp.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios'
-import API_URL from '../../config/global';
 
 
 
@@ -28,7 +27,7 @@ const handleChange = (e) => {
 const handleSubmit = async (e) =>{
         e.preventDefault();
     try{
-        const response = await axios.post(`${API_URL}/signin/verify`, formData); 
+        const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/signin/verify`, formData); 
         console.log(response);
         if(response.data === true){
             alert('registration link sent to email check your email')
